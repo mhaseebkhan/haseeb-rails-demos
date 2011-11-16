@@ -16,3 +16,24 @@
   width: 150px;
   text-align: center;
 }
+
+#container {
+    color: white;
+    height: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+    width: 780px;
+    text-align: justify;
+}
+
+#container .background {
+    background: none repeat scroll 0 0 black;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
