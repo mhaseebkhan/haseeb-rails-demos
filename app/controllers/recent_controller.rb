@@ -19,7 +19,7 @@ class RecentController < ApplicationController
     fetched_status_messages = ActiveSupport::JSON.decode(response.body)
     @status_messages = []
 
-    if fetched_status_messages['error']
+    if !fetched_status_messages.kind_of?(Array) && fetched_status_messages['error']
       flash[:notice] = fetched_status_messages['error']
     else
       fetched_status_messages.each do |fetched_status_message|
