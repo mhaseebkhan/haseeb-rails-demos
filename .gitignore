@@ -3,6 +3,7 @@
 config/database.yml
 log/*
 tmp/*
+.bundle
 
 ## generic files to ignore
 *~
