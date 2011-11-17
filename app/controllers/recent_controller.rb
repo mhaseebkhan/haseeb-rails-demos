@@ -5,8 +5,6 @@ class RecentController < ApplicationController
 
   def flickr
     flickr = FlickRaw::Flickr.new
-    uploader = ImageMeshUploader.new
-
     list = flickr.photos.getRecent
     @photo_paths = []
 
