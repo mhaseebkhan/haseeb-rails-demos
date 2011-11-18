@@ -7,7 +7,7 @@ class FotoVillasController < ApplicationController
   end
 
   def random_fact
-    @fact = FACTS[rand(9)]
+    @random_fact = FACTS[rand(9)]
   end
 
 end
