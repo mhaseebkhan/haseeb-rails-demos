@@ -1,0 +1,2 @@
+module FotoVillasHelper
+end

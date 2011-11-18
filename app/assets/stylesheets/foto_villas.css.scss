@@ -1,0 +1,44 @@
+// Place all the styles related to the FotoVillas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home-container {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+#dom-element-1 {
+  background-color: gray;
+  opacity: 0.7;
+  width: 150px;
+  text-align: center;
+}
+
+#dom-element-2 {
+  background-color: #add8e6;
+  opacity: 0.7;
+  width: 150px;
+  text-align: center;
+}
+
+.fact-container {
+  color: white;
+  height: 200px;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
+  width: 780px;
+  text-align: justify;
+}
+
+.fact-container .background {
+  background: none repeat scroll 0 0 black;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
