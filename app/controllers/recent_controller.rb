@@ -4,13 +4,11 @@ require 'flickraw'
 class RecentController < ApplicationController
 
   def flickr
+
     flickr = FlickRaw::Flickr.new
     list = flickr.photos.getRecent
-    @photo_paths = []
+    @photos = list.to_a.slice(0, 5)
 
-    for index in 0..19 do
-      @photo_paths << "http://farm#{list[index].farm}.static.flickr.com/#{list[index].server}/#{list[index].id}_#{list[index].secret}_m.jpg"
-    end
   end
 
   def twitter
