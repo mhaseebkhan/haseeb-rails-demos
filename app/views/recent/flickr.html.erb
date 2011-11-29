@@ -2,7 +2,7 @@
   <ul>
     <% @photos.each do |photo| %>
       <li>
-        <a href="<%= "http://farm#{photo.farm}.static.flickr.com/#{photo.server}/#{photo.id}_#{photo.secret}_z.jpg" %>"><img src=<%= "http://farm#{photo.farm}.static.flickr.com/#{photo.server}/#{photo.id}_#{photo.secret}_m.jpg" %> /></a>
+        <a href="<%= "http://farm#{photo.farm}.static.flickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>"><img src=<%= "http://farm#{photo.farm}.static.flickr.com/#{photo.server}/#{photo.id}_#{photo.secret}_m.jpg" %> /></a>
       </li>
     <% end %>
   </ul>
